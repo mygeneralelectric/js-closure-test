@@ -1,17 +1,27 @@
-// test4
+// test5
 
-function foo() {
-    var a = 2;
-
-    return function baz() {
-        var b = 9;
-
-        return function fn() {
-            console.log(a, b);
+(function() {
+    var a =10;
+    var b =20;
+    var test = {
+        m: 20,
+        add: function(x) {
+            return a + x;
+        },
+        sum: function() {
+            return a + b;
+        },
+        mark: function(k, j) {
+            return k + j;
         }
     }
-}
 
-var bar = foo();
-var fn = bar();
-fn();
+    window.test = test;
+})();
+
+test.add(100);
+test.sum();
+test.mark();
+
+var _mark = test.mark;
+_mark();
