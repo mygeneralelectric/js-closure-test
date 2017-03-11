@@ -1,0 +1,1 @@
+javascript闭包测试
