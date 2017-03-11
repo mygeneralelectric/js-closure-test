@@ -1,4 +1,4 @@
-// test3
+// test4
 
 function foo() {
     var a = 2;
@@ -7,7 +7,7 @@ function foo() {
         var b = 9;
 
         return function fn() {
-            console.log(a);
+            console.log(a, b);
         }
     }
 }
