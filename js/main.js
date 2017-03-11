@@ -1,27 +1,17 @@
-// test5
+// test6
 
-(function() {
-    var a =10;
-    var b =20;
-    var test = {
-        m: 20,
-        add: function(x) {
-            return a + x;
-        },
-        sum: function() {
-            return a + b;
-        },
-        mark: function(k, j) {
-            return k + j;
-        }
+function foo() {
+    var a = 10;
+
+    function fn1() {
+        return a;
     }
 
-    window.test = test;
-})();
+    function fn2() {
+        return 10;
+    }
 
-test.add(100);
-test.sum();
-test.mark();
+    fn2();
+}
 
-var _mark = test.mark;
-_mark();
+foo();
